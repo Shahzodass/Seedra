@@ -1,3 +1,4 @@
-body{
-    background-color: aqua;
-}
+@use './components/navbar';
+@use './components/unique/unique';
+@use './components/main_page';
+@use './components/price_section';

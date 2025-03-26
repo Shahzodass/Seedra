@@ -1,0 +1,36 @@
+@use './unique/mixin' as*;
+@use './unique/root' as*;
+.section1{
+    margin-top: 3rem;
+    .top{
+        @include flexbox(space-between,center,row);
+        h2{
+            font-size: 36px;
+            font-weight: 600;
+        }
+        .right_btn{
+            @include button($white,$brand_color,$light_grey_stroke);
+            border: 1px solid $light_grey_stroke;
+        }
+    }
+    .products{
+        @include flexbox(space-between,center,row);
+        .top_card{
+            padding: 0.8rem 1rem ;
+            border-radius: 8px;
+            background-color: transparent;
+            color: #111;
+            border: 1px solid $light_grey_stroke;
+            img{
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+    .cards{
+        @include flexbox(center,center,wrap,row);
+        .card{
+
+        }
+    }
+}

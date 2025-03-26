@@ -1,0 +1,27 @@
+@use './root' as*;
+@mixin flexbox($justify, $align,$direction,$gap:0) {
+    display: flex;
+    align-items:$align ;
+    justify-content: $justify;
+    flex-direction: $direction;
+    gap: $gap;
+}
+@mixin icons($color,$hover_color:"",$size:"" ){
+    color: $color;
+    font-size: 1.5rem;
+    font-size: $size;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    &:hover{
+        color: $hover_color;
+    }
+}
+@mixin button($bg_color,$text_color,$border){
+    padding: 11px 33px;
+    border-radius: 8px;
+    border: $border;
+    background-color: $bg_color;
+    color: $text_color;
+    font-size: 1rem;
+    font-weight: 500;
+}

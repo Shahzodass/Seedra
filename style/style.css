@@ -1,5 +1,228 @@
-body {
-  background-color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 0;
+  padding: 1rem 0;
+}
+header .navbar .menu_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 1rem;
+}
+header .navbar .menu_list li {
+  border-right: 1px solid #efeeef;
+  padding-right: 1rem;
+}
+header .navbar .menu_list li:last-child {
+  border: none;
+}
+header .navbar .menu_list li a {
+  color: #70737c;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+header .navbar .menu_list li a:hover {
+  color: #359740;
+}
+header .navbar .social_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 1rem;
+}
+header .navbar .social_list .instagram, header .navbar .social_list .facebook {
+  color: #70737c;
+  font-size: 1.5rem;
+  font-size: "";
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+header .navbar .social_list .instagram:hover, header .navbar .social_list .facebook:hover {
+  color: #359740;
+}
+header .navbar .social_list .input {
+  position: relative;
+}
+header .navbar .social_list .input input {
+  border: 1px solid #efeeef;
+  padding: 0.5rem 0.7rem;
+  border-radius: 1rem;
+  font-size: 14px;
+  color: #70737c;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+header .navbar .social_list .input input:focus {
+  border-color: #359740;
+}
+header .navbar .social_list .input i {
+  position: absolute;
+  right: 1rem;
+  top: 20%;
+  background-color: white;
+  color: #70737c;
+  font-size: 1.5rem;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+header .navbar .social_list .input i:hover {
+  color: "";
+}
+header .navbar .social_list .heart, header .navbar .social_list .cart {
+  color: #359740;
+  font-size: 1.5rem;
+  font-size: "";
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+header .navbar .social_list .heart:hover, header .navbar .social_list .cart:hover {
+  color: "";
+}
+
+* {
+  font-family: "Lexend", sans-serif;
+}
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: "";
+  gap: 3rem;
+  background-color: #eaf1eb;
+  border-radius: 24px;
+  margin-top: 1.5rem;
+}
+.main .left {
+  width: 52%;
+}
+.main .left h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #1f2533;
+}
+.main .left p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #1f2533;
+}
+.main .left .first {
+  font-size: 42px;
+  font-weight: 600;
+  color: #1f2533;
+}
+.main .left .second {
+  font-size: 22px;
+  font-weight: 600;
+  color: #70737c;
+  margin-left: 1rem;
+  text-decoration: line-through;
+}
+.main .left .btn {
+  padding: 11px 33px;
+  border-radius: 8px;
+  border: #359740;
+  background-color: #359740;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+.main .left .btn2 {
+  padding: 11px 33px;
+  border-radius: 8px;
+  border: #fff;
+  background-color: #fff;
+  color: #359740;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  margin-bottom: 3rem;
+}
+.main img {
+  width: 340px;
+  height: 340px;
+}
+
+.bottom img {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.section1 {
+  margin-top: 3rem;
+}
+.section1 .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 0;
+}
+.section1 .top h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.section1 .top .right_btn {
+  padding: 11px 33px;
+  border-radius: 8px;
+  border: #efeeef;
+  background-color: #fff;
+  color: #359740;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid #efeeef;
+}
+.section1 .products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 0;
+}
+.section1 .products .top_card {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #111;
+  border: 1px solid #efeeef;
+}
+.section1 .products .top_card img {
+  width: 28px;
+  height: 28px;
+}
+.section1 .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: wrap;
+  gap: row;
 }
 
 /*# sourceMappingURL=style.css.map */
