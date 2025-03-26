@@ -1,2 +1,2 @@
-# Seedra
+# MySeedra
 this is a first repository
