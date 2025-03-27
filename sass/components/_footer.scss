@@ -1,0 +1,6 @@
+@use './unique/mixin' as*;
+@use './unique/root' as*;
+.footer{
+    width: 100%;
+    object-fit: cover;
+}

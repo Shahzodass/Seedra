@@ -16,6 +16,7 @@
     .products{
         @include flexbox(space-between,center,row);
         .top_card{
+            @include flexbox(center,center,row,1rem);
             padding: 0.8rem 1rem ;
             border-radius: 8px;
             background-color: transparent;
@@ -28,9 +29,49 @@
         }
     }
     .cards{
-        @include flexbox(center,center,wrap,row);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2rem;
         .card{
-
+            width: 300px;
+            height: 450px;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid $light_grey_stroke;
+            .image{
+                width: 294px;
+                height: 294px;
+                // margin-left: 2rem;
+                overflow: hidden;
+            }
+            .stars{
+                i{
+                font-size: 1rem;
+                margin-top: 1rem;
+                color: $yellow_color;
+                }
+            }
+            .number{
+                font-size: 1rem;
+                color: $text_secondary;
+                margin-left: 1rem;
+            }
+            p{
+                font-size: 1rem;
+                color: $text_primary;
+                font-weight: 500;
+            }
+            .bottom1{
+                @include flexbox(space-between,center,wrap,row);
+                .price{
+                font-size: 28px;
+                font-weight: 600;
+                color: $text_primary;
+                }
+            }
         }
     }
 }

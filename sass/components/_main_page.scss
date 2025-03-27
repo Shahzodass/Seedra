@@ -1,14 +1,14 @@
 @use './unique/mixin' as*;
 @use './unique/root' as*;
 .main{
-    @include flexbox(center,center,"",3rem);
+    @include flexbox(center,center,"",5rem);
     background-color: $light_gray;
     border-radius: 24px;
     margin-top: 1.5rem;
     .left{
-        width: 52%;
+        width: 50%;
         h2{
-            font-size: 48px;
+            font-size: 38px;
             font-weight: 600;
             color: $text_primary;
         }

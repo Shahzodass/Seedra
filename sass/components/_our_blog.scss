@@ -1,0 +1,111 @@
+@use './unique/mixin' as*;
+@use './unique/root' as*;
+.our_blog{
+    @include flexbox(space-between,center,row);
+    h2{
+        font-size: 36px;
+        font-weight: 600;
+        color: $text_primary;
+    }
+    .right_btn{
+        @include button($white,$brand_color,$light_grey_stroke);
+            border: 1px solid $light_grey_stroke;
+    }
+}
+.blog{
+    @include flexbox(space-between,center,"");
+    .right_page{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        .large{
+            @include flexbox(space-between,center,"");
+            width: 730px;
+            height: 300px;
+            border-radius: 12px;
+            background-color: $light_gray;
+            .barg_left{
+                margin: 1.5rem;
+                .date{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $text_secondary;
+                }
+                h2{
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: $text_primary;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $text_secondary;
+                    line-height: 2;
+                }
+                button{
+                    @include button($white,$brand_color,$light_grey_stroke);
+                    border: 1px solid $light_grey_stroke;
+                }
+            }
+        }
+        .small{
+            width: 360px;
+            height: 300px;
+            border-radius: 12px;
+            background-color: $light_blue;
+            .date{
+                font-size: 14px;
+                font-weight: 400;
+                color: $text_secondary;
+                padding-top: 1.5rem;
+                margin-left: 1.5rem;
+            }
+            h2{
+                font-size: 24px;
+                font-weight: 600;
+                color: $text_primary;
+                margin-left: 1.5rem;
+            }
+            button{
+                @include button($white,$brand_color,$light_grey_stroke);
+                border: 1px solid $light_grey_stroke;
+                margin-left: 1.5rem;
+            }
+        }
+    }
+    .medium{
+        @include flexbox(space-between,center,column);
+        width: 350px;
+        height: 570px;
+        background-color: $light_blue;
+        padding: 1.5rem;
+        border-radius: 12px;
+       .female_page{
+        .date{
+            font-size: 14px;
+            font-weight: 400;
+            color: $text_secondary;
+            padding-top: 1.5rem;
+        }
+        h2{
+            font-size: 24px;
+            font-weight: 600;
+            color: $text_primary;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            color: $text_secondary;
+            line-height: 2;
+        }
+        button{
+            @include button($white,$brand_color,$light_grey_stroke);
+            border: 1px solid $light_grey_stroke;
+        }
+       }
+       .women{
+        width: 100%;
+        overflow: hidden;
+       }
+    }
+}

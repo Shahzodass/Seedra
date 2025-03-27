@@ -1,0 +1,19 @@
+@use './unique/mixin' as*;
+@use './unique/root' as*;
+.text_page{
+    @include flexbox(center,center,"",3rem);
+    margin-top: 2rem;
+    .text{
+        h2{
+            font-size: 36px;
+            font-weight: 600;
+            color: $text_primary;
+        }
+        p{
+            font-size: 1rem;
+            font-weight: 300;
+            color: $text_primary;
+            line-height: 2;
+        }
+    }
+}
